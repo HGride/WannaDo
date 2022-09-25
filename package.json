@@ -1,0 +1,36 @@
+{
+  "name": "wannado",
+  "version": "1.0.0",
+  "description": "WannaDo is a quick and easy to use todo ;)",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HGride/WannaDo.git"
+  },
+  "keywords": [
+    "Todo",
+    "mevn"
+  ],
+  "author": "Théo Lesage",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HGride/WannaDo/issues"
+  },
+  "homepage": "https://github.com/HGride/WannaDo#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "joi": "^17.6.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
