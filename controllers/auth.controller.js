@@ -95,8 +95,6 @@ exports.login = async (req, res)=>{
             accessToken = genAccessToken(user)
             refreshToken = genRefreshToken(user)
 
-            console.log(userPermision.indexOf('admin'));
-
             if(userPermision.indexOf('admin') != -1){
                 let adminToken = genAdminToken(user)
                 res.json({

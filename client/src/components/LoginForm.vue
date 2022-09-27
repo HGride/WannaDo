@@ -1,11 +1,32 @@
+<script>
+import axios from 'axios'
+
+export default{
+    data: () => ({
+        formSate: "log"
+    }),
+    
+    methods: {
+        swpToLog(){
+            this.formSate = "log"
+        },
+        swpToReg(){
+            this.formSate = "reg"
+        }
+    }
+}
+</script>
+
 <template>
     <div class="login-form">
         <div class="wraper">
-            <h2 class="title">Login or register</h2>
+            <h2 class="title">
+                <span @click="swpToLog">Login</span> or <span @click="swpToReg">register</span>
+            </h2>
             <hr>
         </div>
         <div class="wraper">
-            <div class="input-wraper">
+            <div class="input-wraper" v-if="formSate == 'reg'">
                 <label for="name">Name</label>
                 <input type="text" name="name" placeholder="Name">
             </div>
